@@ -1,4 +1,4 @@
-def calcular_mcd(a, b):
+def calcular_minimo_comun_divisor(a, b):
     while b != 0:
         a, b = b, a % b
     return a
@@ -33,7 +33,7 @@ num1 = int(num1)
 num2 = int(num2)
 
 # Calcular el MCD
-mcd = calcular_mcd(num1, num2)
+mcd = calcular_minimo_comun_divisor(num1, num2)
 
 # Mostrar el resultado
 print("El máximo común divisor (MCD) de", num1, "y", num2, "es:", mcd)
